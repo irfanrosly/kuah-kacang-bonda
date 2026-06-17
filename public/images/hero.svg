@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <defs>
+    <radialGradient id="heroGlow" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#D4A04A" stop-opacity="0.3"/>
+      <stop offset="40%" stop-color="#8B4513" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#1A0A00" stop-opacity="0.95"/>
+    </radialGradient>
+    <linearGradient id="bowlGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5C3A1E"/>
+      <stop offset="100%" stop-color="#3D1A00"/>
+    </linearGradient>
+    <linearGradient id="sauceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A04A"/>
+      <stop offset="30%" stop-color="#C78B3E"/>
+      <stop offset="70%" stop-color="#A06B2A"/>
+      <stop offset="100%" stop-color="#8B5A2B"/>
+    </linearGradient>
+    <linearGradient id="sauceTop" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#E8C87C" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#C78B3E" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#1A0A00" flood-opacity="0.5"/>
+    </filter>
+    <filter id="blur1">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <!-- Base gradient -->
+  <rect width="1440" height="900" fill="url(#heroGlow)"/>
+  <!-- Surface/table -->
+  <rect x="0" y="650" width="1440" height="250" fill="#2D1500" opacity="0.6"/>
+  <!-- Bowl shadow -->
+  <ellipse cx="720" cy="680" rx="280" ry="30" fill="#000" opacity="0.3" filter="url(#blur1)"/>
+  <!-- Bowl outer -->
+  <path d="M440 400 Q440 680 720 680 Q1000 680 1000 400" fill="url(#bowlGrad)" filter="url(#shadow)"/>
+  <!-- Bowl inner rim -->
+  <ellipse cx="720" cy="400" rx="280" ry="60" fill="#4A2810"/>
+  <ellipse cx="720" cy="400" rx="260" ry="55" fill="#5C3A1E"/>
+  <!-- Sauce surface -->
+  <ellipse cx="720" cy="400" rx="245" ry="50" fill="url(#sauceGrad)"/>
+  <ellipse cx="720" cy="398" rx="230" ry="45" fill="url(#sauceTop)"/>
+  <!-- Oil sheen highlights -->
+  <ellipse cx="660" cy="385" rx="60" ry="12" fill="#E8C87C" opacity="0.15" transform="rotate(-15 660 385)"/>
+  <ellipse cx="780" cy="395" rx="40" ry="8" fill="#E8C87C" opacity="0.1" transform="rotate(10 780 395)"/>
+  <!-- Peanut bits -->
+  <ellipse cx="650" cy="390" rx="6" ry="4" fill="#8B5A2B" opacity="0.6" transform="rotate(-20 650 390)"/>
+  <ellipse cx="780" cy="405" rx="5" ry="3" fill="#8B5A2B" opacity="0.5" transform="rotate(15 780 405)"/>
+  <ellipse cx="700" cy="380" rx="4" ry="3" fill="#8B5A2B" opacity="0.5" transform="rotate(-30 700 380)"/>
+  <ellipse cx="740" cy="410" rx="5" ry="3.5" fill="#8B5A2B" opacity="0.55" transform="rotate(25 740 410)"/>
+  <ellipse cx="680" cy="415" rx="4" ry="2.5" fill="#8B5A2B" opacity="0.45" transform="rotate(-10 680 415)"/>
+  <ellipse cx="760" cy="385" rx="3.5" ry="2.5" fill="#8B5A2B" opacity="0.4" transform="rotate(40 760 385)"/>
+  <!-- Garnish: daun ketumbar / coriander leaves -->
+  <path d="M690 375 Q685 355 675 350 Q670 348 672 355 Q674 360 680 365" fill="#4A7C3F" opacity="0.7"/>
+  <path d="M690 375 Q695 352 705 348 Q710 346 708 355 Q705 362 698 367" fill="#5A9C4F" opacity="0.6"/>
+  <path d="M690 375 Q692 358 698 352" stroke="#4A7C3F" stroke-width="1" fill="none" opacity="0.5"/>
+  <!-- Steam wisps -->
+  <path d="M680 340 Q683 320 680 300 Q677 280 680 260" stroke="#FFF8F0" stroke-width="2.5" fill="none" opacity="0.12" filter="url(#blur1)"/>
+  <path d="M720 330 Q724 308 720 286 Q716 264 720 242" stroke="#FFF8F0" stroke-width="3" fill="none" opacity="0.1" filter="url(#blur1)"/>
+  <path d="M755 340 Q758 322 755 304 Q752 286 755 268" stroke="#FFF8F0" stroke-width="2" fill="none" opacity="0.08" filter="url(#blur1)"/>
+  <!-- Floating aromatics -->
+  <ellipse cx="610" cy="520" rx="10" ry="6" fill="#D4A04A" opacity="0.15" transform="rotate(-20 610 520)"/>
+  <ellipse cx="830" cy="510" rx="8" ry="5" fill="#D4A04A" opacity="0.12" transform="rotate(15 830 510)"/>
+  <!-- Cili/ketchup drops on rim -->
+  <circle cx="480" cy="420" r="3" fill="#C73B1E" opacity="0.3"/>
+  <circle cx="960" cy="415" r="2.5" fill="#C73B1E" opacity="0.25"/>
+</svg>

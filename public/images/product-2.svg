@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="tableWd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3D1A00"/>
+      <stop offset="50%" stop-color="#2D1500"/>
+      <stop offset="100%" stop-color="#1A0A00"/>
+    </linearGradient>
+    <radialGradient id="bowlShade" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF8F0" stop-opacity="0.05"/>
+      <stop offset="70%" stop-color="#1A0A00" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#1A0A00" stop-opacity="0.25"/>
+    </radialGradient>
+    <radialGradient id="saucePool" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D4A04A"/>
+      <stop offset="40%" stop-color="#C78B3E"/>
+      <stop offset="70%" stop-color="#A06B2A"/>
+      <stop offset="100%" stop-color="#8B5A2B"/>
+    </radialGradient>
+    <radialGradient id="sauceHighlight" cx="40%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#E8C87C" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#E8C87C" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blurSm">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+  </defs>
+  <rect width="600" height="600" fill="url(#tableWd)"/>
+  <!-- Wood grain hint -->
+  <line x1="0" y1="150" x2="600" y2="150" stroke="#3D1A00" stroke-width="0.5" opacity="0.15"/>
+  <line x1="0" y1="350" x2="600" y2="350" stroke="#3D1A00" stroke-width="0.5" opacity="0.1"/>
+  <line x1="0" y1="500" x2="600" y2="500" stroke="#3D1A00" stroke-width="0.5" opacity="0.12"/>
+  <!-- Bowl outer ring shadow -->
+  <circle cx="300" cy="300" r="235" fill="#000" opacity="0.12" filter="url(#blurSm)"/>
+  <!-- Bowl outer -->
+  <circle cx="300" cy="300" r="225" fill="#5C3A1E"/>
+  <circle cx="300" cy="300" r="220" fill="#4A2810"/>
+  <!-- Bowl inner -->
+  <circle cx="300" cy="300" r="205" fill="#3D1A00"/>
+  <circle cx="300" cy="300" r="200" fill="#2D1500"/>
+  <!-- Sauce pool -->
+  <circle cx="300" cy="300" r="190" fill="url(#saucePool)"/>
+  <circle cx="300" cy="300" r="185" fill="url(#sauceHighlight)"/>
+  <!-- Sauce depth - darker ring -->
+  <circle cx="300" cy="300" r="150" fill="none" stroke="#8B5A2B" stroke-width="15" opacity="0.15"/>
+  <!-- Oil highlights -->
+  <ellipse cx="260" cy="270" rx="45" ry="12" fill="#E8C87C" opacity="0.1" transform="rotate(-20 260 270)"/>
+  <ellipse cx="340" cy="320" rx="35" ry="8" fill="#E8C87C" opacity="0.08" transform="rotate(15 340 320)"/>
+  <ellipse cx="300" cy="250" rx="25" ry="6" fill="#E8C87C" opacity="0.06" transform="rotate(-5 300 250)"/>
+  <!-- Dense peanut bits in center -->
+  <ellipse cx="290" cy="290" rx="5" ry="3.5" fill="#8B5A2B" opacity="0.6" transform="rotate(-15 290 290)"/>
+  <ellipse cx="310" cy="305" rx="4.5" ry="3" fill="#8B5A2B" opacity="0.55" transform="rotate(20 310 305)"/>
+  <ellipse cx="280" cy="310" rx="4" ry="2.5" fill="#8B5A2B" opacity="0.5" transform="rotate(-30 280 310)"/>
+  <ellipse cx="325" cy="285" rx="5" ry="3" fill="#8B5A2B" opacity="0.5" transform="rotate(40 325 285)"/>
+  <ellipse cx="270" cy="295" rx="3.5" ry="2.5" fill="#8B5A2B" opacity="0.45" transform="rotate(-10 270 295)"/>
+  <ellipse cx="315" cy="320" rx="4" ry="2.5" fill="#8B5A2B" opacity="0.45" transform="rotate(30 315 320)"/>
+  <ellipse cx="295" cy="275" rx="3" ry="2" fill="#8B5A2B" opacity="0.4" transform="rotate(-25 295 275)"/>
+  <!-- Scattered peanut bits toward edges -->
+  <ellipse cx="230" cy="280" rx="3" ry="2" fill="#8B5A2B" opacity="0.3" transform="rotate(-40 230 280)"/>
+  <ellipse cx="370" cy="300" rx="3.5" ry="2" fill="#8B5A2B" opacity="0.3" transform="rotate(20 370 300)"/>
+  <!-- Garnish -->
+  <path d="M275 265 Q268 248 260 245 Q255 243 258 250 Q262 258 268 262" fill="#5A9C4F" opacity="0.5"/>
+  <path d="M280 270 Q278 252 272 248" stroke="#4A7C3F" stroke-width="1" fill="none" opacity="0.4"/>
+  <!-- Bowl rim highlight -->
+  <circle cx="300" cy="300" r="200" fill="none" stroke="#FFF8F0" stroke-width="1.5" opacity="0.04"/>
+  <circle cx="300" cy="300" r="222" fill="none" stroke="#FFF8F0" stroke-width="1" opacity="0.03"/>
+</svg>

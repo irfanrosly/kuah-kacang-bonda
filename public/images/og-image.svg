@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="ogbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A0A00"/>
+      <stop offset="50%" stop-color="#3D1A00"/>
+      <stop offset="100%" stop-color="#C73B1E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogbg)"/>
+  <!-- Decorative circle -->
+  <circle cx="600" cy="315" r="200" fill="#E8A87C" opacity="0.08"/>
+  <circle cx="600" cy="315" r="140" fill="#E8A87C" opacity="0.06"/>
+  <text x="600" y="260" font-family="serif" font-size="48" fill="#E8A87C" text-anchor="middle" font-weight="bold" letter-spacing="4">RESEPI BONDA</text>
+  <text x="600" y="310" font-family="sans-serif" font-size="28" fill="#FFF8F0" text-anchor="middle">Kuah Kacang</text>
+  <text x="600" y="360" font-family="sans-serif" font-size="18" fill="#FFF8F0" text-anchor="middle" opacity="0.7">Rasa kampung, dalam setiap suapan.</text>
+  <text x="600" y="400" font-family="sans-serif" font-size="14" fill="#E8A87C" text-anchor="middle">500g — Halal ✓ — Penghantaran ke seluruh Malaysia</text>
+  <!-- Rating stars -->
+  <text x="600" y="445" font-size="16" fill="#FFD700" text-anchor="middle">★★★★★ 5.0 (397 ulasan)</text>
+</svg>
