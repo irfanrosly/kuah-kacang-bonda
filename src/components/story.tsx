@@ -79,7 +79,7 @@ export default function Story() {
             </div>
 
             {/* Headline */}
-            <h2 className="text-4xl sm:text-5xl font-bold leading-[1.1]">
+            <h2 className="font-heading text-4xl sm:text-5xl font-bold leading-[1.1]">
               <span className="text-brand-bg">Warisi Rasa</span>
               <br />
               <span className="text-brand-accent">Dari Dapur Nenek</span>

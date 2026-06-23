@@ -44,7 +44,7 @@ export default function FinalCta() {
         </span>
 
         {/* Headline */}
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
+        <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
           Cuba Sendiri
           <span className="block text-brand-cream/80 text-2xl sm:text-3xl lg:text-4xl mt-2 font-light">
             Rasai kelainannya

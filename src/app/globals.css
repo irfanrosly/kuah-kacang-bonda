@@ -6,9 +6,10 @@
   --color-brand-cream: #fff8f0;
   --color-brand-warm: #e8a87c;
 
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   --font-mono: "SF Mono", Monaco, "Cascadia Code", "Consolas", monospace;
+  --font-heading: var(--font-lora), Georgia, "Times New Roman", serif;
 }
 
 html {
@@ -126,4 +127,27 @@ body {
 }
 .text-reveal-inner.revealed {
   transform: translateY(0);
+}
+
+/* ── Heading font utility ── */
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+/* ── Respect user motion preferences ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .animate-fade-in-up,
+  .stagger-child,
+  .text-reveal-inner {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }

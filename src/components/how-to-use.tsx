@@ -1,7 +1,7 @@
 "use client";
 
 import { PRODUCT } from "@/lib/constants";
-import { StaggerProvider, StaggerChild, useScrollReveal } from "@/lib/use-scroll-reveal";
+import { useScrollReveal } from "@/lib/use-scroll-reveal";
 
 /* Custom SVG icons for each usage */
 const UseIcons = {
@@ -61,7 +61,7 @@ export default function HowToUse() {
           <span className="text-xs font-semibold text-brand-accent uppercase tracking-[0.25em]">
             Cara Penggunaan
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-bg mt-4 leading-tight">
+          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-bg mt-4 leading-tight">
             Padanan{" "}
             <span className="text-brand-accent">Sempurna</span>
           </h2>
@@ -98,7 +98,7 @@ export default function HowToUse() {
                 </div>
 
                 {/* Label */}
-                <h3 className="text-lg font-bold text-brand-bg mb-1">
+                <h3 className="font-heading text-lg font-bold text-brand-bg mb-1">
                   {use.label}
                 </h3>
                 <p className="text-xs text-brand-bg/50 max-w-[120px]">
@@ -115,7 +115,14 @@ export default function HowToUse() {
             }`}
           >
             <div className="bg-brand-bg/5 border border-brand-bg/10 rounded-2xl p-6 text-center">
-              <span className="text-2xl block mb-2">💡</span>
+              <span className="block mb-2 mx-auto w-8 h-8 text-brand-accent/60">
+                {/* Lightbulb SVG */}
+                <svg viewBox="0 0 40 40" fill="none" className="w-8 h-8">
+                  <path d="M20 4c-6 0-11 4.5-11 11 0 4 2 7 4 9v4c0 1.5 1 3 2.5 3h9c1.5 0 2.5-1.5 2.5-3v-4c2-2 4-5 4-9 0-6.5-5-11-11-11z" stroke="currentColor" strokeWidth="1.5" opacity="0.5" />
+                  <path d="M17 28h6M17 32h6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.4" />
+                  <path d="M14 16c0-3 2.5-5.5 6-5.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" opacity="0.7" />
+                </svg>
+              </span>
               <p className="text-sm text-brand-bg/60">
                 <strong className="text-brand-bg">Tip:</strong> Panaskan dengan api perlahan
                 dan kacau rata sebelum digunakan untuk rasa yang terbaik.

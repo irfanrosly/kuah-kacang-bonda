@@ -56,7 +56,7 @@ export default function Testimonials() {
           <span className="text-xs font-semibold text-brand-accent uppercase tracking-[0.25em]">
             Testimonial
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-bg mt-4">
+          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-bg mt-4">
             Apa Kata Mereka?
           </h2>
           <div className="flex items-center justify-center gap-2 mt-4">

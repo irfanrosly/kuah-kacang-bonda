@@ -87,7 +87,7 @@ export default function Hero() {
             </div>
 
             {/* Headline */}
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[0.9] text-brand-cream">
+            <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[0.9] text-brand-cream">
               <span className="block">Kuah</span>
               <span className="block text-brand-warm">Kacang</span>
               <span className="block mt-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-wide text-brand-cream/80">

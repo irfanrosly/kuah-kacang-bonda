@@ -70,7 +70,7 @@ export default function Specs() {
           <span className="text-xs font-semibold text-brand-warm/50 uppercase tracking-[0.25em]">
             Apa Yang Anda Dapat
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-cream mt-4">
+          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-cream mt-4">
             Spesifikasi
           </h2>
         </div>
@@ -82,7 +82,13 @@ export default function Specs() {
               className="group bg-brand-cream/[0.03] border border-brand-warm/10 rounded-2xl p-5 text-center hover:bg-brand-cream/[0.06] hover:border-brand-warm/25 transition-all duration-500"
             >
               <div className="text-brand-warm/70 mb-3 group-hover:scale-110 group-hover:text-brand-warm transition-all duration-500 inline-block">
-                {SpecIcons[spec.label] || <span className="text-2xl">📦</span>}
+                {SpecIcons[spec.label] || (
+                  <svg viewBox="0 0 40 40" fill="none" className="w-8 h-8 text-brand-warm/50">
+                    <rect x="8" y="12" width="24" height="18" rx="3" stroke="currentColor" strokeWidth="1.5" opacity="0.6" />
+                    <path d="M8 16h24" stroke="currentColor" strokeWidth="1.5" opacity="0.4" />
+                    <path d="M16 12v-2a2 2 0 012-2h4a2 2 0 012 2v2" stroke="currentColor" strokeWidth="1.5" opacity="0.5" />
+                  </svg>
+                )}
               </div>
               <p className="text-sm font-bold text-brand-cream mb-1">
                 {spec.value}

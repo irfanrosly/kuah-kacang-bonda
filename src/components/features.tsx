@@ -48,7 +48,7 @@ export default function Features() {
           <span className="text-xs font-semibold text-brand-warm/50 uppercase tracking-[0.25em]">
             Kenapa Kami Berbeza
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-cream mt-4 leading-tight">
+          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-cream mt-4 leading-tight">
             Masak Dengan{" "}
             <span className="text-brand-warm">Kasih Sayang</span>
           </h2>
@@ -73,7 +73,7 @@ export default function Features() {
                     </div>
 
                     {/* Content */}
-                    <h3 className="text-xl font-bold text-brand-cream group-hover:text-brand-warm transition-colors duration-300">
+                    <h3 className="font-heading text-xl font-bold text-brand-cream group-hover:text-brand-warm transition-colors duration-300">
                       {feature.title}
                     </h3>
                     <p className="text-brand-cream/50 text-sm leading-relaxed group-hover:text-brand-cream/60 transition-colors duration-300">
